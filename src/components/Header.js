@@ -24,24 +24,8 @@ const Header = (props) => {
         <Grid is_flex padding="4px 16px">
           <Grid>
             <Text margin="0px" size="24px" bold>
-              헬로
+              Instagram
             </Text>
-          </Grid>
-
-          <Grid is_flex>
-            <Button text="내정보"></Button>
-            <Button
-              _onClick={() => {
-                history.push("/noti");
-              }}
-              text="알림"
-            ></Button>
-            <Button
-              text="로그아웃"
-              _onClick={() => {
-                dispatch(userActions.logoutFB());
-              }}
-            ></Button>
           </Grid>
         </Grid>
       </React.Fragment>
@@ -53,23 +37,8 @@ const Header = (props) => {
       <Grid is_flex padding="4px 16px">
         <Grid>
           <Text margin="0px" size="24px" bold>
-            헬로
+            Instagram
           </Text>
-        </Grid>
-
-        <Grid is_flex>
-          <Button
-            text="로그인"
-            _onClick={() => {
-              history.push("/login");
-            }}
-          ></Button>
-          <Button
-            text="회원가입"
-            _onClick={() => {
-              history.push("/signup");
-            }}
-          ></Button>
         </Grid>
       </Grid>
     </React.Fragment>

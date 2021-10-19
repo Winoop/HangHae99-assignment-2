@@ -45,10 +45,12 @@ const Post = (props) => {
 
 Post.defaultProps = {
   user_info: {
-    user_name: "mean0",
-    user_profile: "https://mean0images.s3.ap-northeast-2.amazonaws.com/4.jpeg",
+    user_name: "Jylee",
+    user_profile:
+      "https://cdn.imweb.me/upload/S201807025b39d1981b0b0/16b98d3e3d30e.jpg",
   },
-  image_url: "https://mean0images.s3.ap-northeast-2.amazonaws.com/4.jpeg",
+  image_url:
+    "https://cdn.imweb.me/upload/S201807025b39d1981b0b0/16b98d3e3d30e.jpg",
   contents: "고양이네요!",
   comment_cnt: 10,
   insert_dt: "2021-02-27 10:00:00",

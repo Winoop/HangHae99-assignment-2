@@ -23,21 +23,7 @@ const PostWrite = (props) => {
   };
 
   if (!is_login) {
-    return (
-      <Grid margin="100px 0px" padding="16px" center>
-        <Text size="32px" bold>
-          앗! 잠깐!
-        </Text>
-        <Text size="16px">로그인 후에만 글을 쓸 수 있어요!</Text>
-        <Button
-          _onClick={() => {
-            history.replace("/");
-          }}
-        >
-          로그인 하러가기
-        </Button>
-      </Grid>
-    );
+    return <Grid />;
   }
   return (
     <React.Fragment>
@@ -57,7 +43,11 @@ const PostWrite = (props) => {
 
         <Image
           shape="rectangle"
-          src={preview ? preview : "http://via.placeholder.com/400x300"}
+          src={
+            preview
+              ? preview
+              : "https://cdn.imweb.me/upload/S201807025b39d1981b0b0/16b98d3e3d30e.jpg"
+          }
         />
       </Grid>
 
